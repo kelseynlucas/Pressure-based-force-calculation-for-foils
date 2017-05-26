@@ -8,3 +8,8 @@ _gap version does this for a foil with a fish-like tail-shape, with a front "bod
 autokinematicsandpressureintegrator_readsplines_cb files read in queen2 pressure fields and the splines from auto foil kinematics vi, and plot pressure fields in a ColorBrewer palette (requires https://www.mathworks.com/matlabcentral/fileexchange/34087-cbrewer---colorbrewer-schemes-for-matlab ).  They also use pressure and foil span & foil kinematics information to calculate forces and torques acting on the foil.
 _varyinght version does this for the fish-like tail-shaped foil, which has varying "height" (span), when the PIV laser is positioned at the foil's midline.
 _gap version does this for the fish-like tail-shaped foil, which has varying "height" (span), when the PIV laser is positioned to cross the gap between the body and tail.
+
+
+queen2_fulltimetrace.py codes read in the pressure-based force and torque data, applies any scaling (ex: multiply by rectangular foils' height which was not included in the initial force calculation, shift axes to match those in the flapping foil system), and saves out the final force and torque traces.
+
+queen2_phaseavg.py codes perform phase averaging of the pressure-based force and torque time traces, and writes out the average traces and the standard deviations.
